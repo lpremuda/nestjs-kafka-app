@@ -63,3 +63,19 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+## Installing and Using Kafka
+
+Article: [Setting up Kafka on Docker for Local Development](https://hackernoon.com/setting-up-kafka-on-docker-for-local-development)
+
+```bash
+docker-compose up -d
+```
+
+### [kcat](https://github.com/edenhill/kcat)
+
+```bash
+brew install kcat
+```
+
+
