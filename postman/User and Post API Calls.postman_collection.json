@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "6814f626-9d9c-4d57-a2a5-95258f09c243",
+		"name": "User and Post API Calls",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18947529"
+	},
+	"item": [
+		{
+			"name": "POST /user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Lucas Premuda\",\n    \"email\": \"lucas@aol.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/user",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"The Title\",\n    \"content\": \"The Content\",\n    \"authorEmail\": \"lucas@aol.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/post",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /post/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/post/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"post",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /publish/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/publish/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"publish",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /feed",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/feed",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"feed"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

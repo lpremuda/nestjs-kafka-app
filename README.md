@@ -26,12 +26,14 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+---
 ## Installation
 
 ```bash
 $ npm install
 ```
 
+---
 ## Running the app
 
 ```bash
@@ -45,13 +47,19 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+---
 ## Viewing the app
 
 ```
 localhost:3000
 ```
 
+---
 ## Test
+
+Import the [User and Post API Calls Postman Collection](./postman/User%20and%20Post%20API%20Calls.postman_collection.json) into Postmand and then run the requests.
+
+Other tests:
 
 ```bash
 # unit tests
@@ -64,6 +72,7 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+---
 ## Installing and Using Kafka
 
 Article: [Setting up Kafka on Docker for Local Development](https://hackernoon.com/setting-up-kafka-on-docker-for-local-development)
@@ -77,5 +86,28 @@ docker-compose up -d
 ```bash
 brew install kcat
 ```
+
+---
+## Setting up Prisma
+
+Article: [Set up Prisma](https://docs.nestjs.com/recipes/prisma#set-up-prisma)
+
+```bash
+npm install prisma --save-dev
+``` 
+
+Set up Prisma for the app:
+```bash
+npx prisma init
+```
+
+Migrate the database:
+```bash
+npx prisma migrate dev --name init
+```
+
+## [Setting up ConfigModule](https://docs.nestjs.com/techniques/configuration)
+
+
 
 
