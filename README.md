@@ -104,9 +104,14 @@ Set up Prisma for the app:
 npx prisma init
 ```
 
-Migrate the database:
+Migrate the database and append the name "init" to the migration name:
 ```bash
 npx prisma migrate dev --name init
+```
+
+View the database in Prisma's modern database IDE:
+```base
+npx prisma studio
 ```
 
 ## [Setting up ConfigModule](https://docs.nestjs.com/techniques/configuration)
