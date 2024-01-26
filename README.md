@@ -37,6 +37,9 @@ $ npm install
 ## Running the app
 
 ```bash
+# start the Postgres Docker image
+$ docker compose up -d
+
 # development
 $ npm run start
 
@@ -78,7 +81,7 @@ $ npm run test:cov
 Article: [Setting up Kafka on Docker for Local Development](https://hackernoon.com/setting-up-kafka-on-docker-for-local-development)
 
 ```bash
-docker-compose up -d
+docker compose -f docker-compose-kafka.yml up -d
 ```
 
 ### [kcat](https://github.com/edenhill/kcat)
