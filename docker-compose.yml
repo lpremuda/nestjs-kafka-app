@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 services:
   db:
     image: postgres:16.1 
@@ -11,5 +11,18 @@ services:
       - '5432:5432'
     volumes:
       - database-data:/var/lib/postgresql/data/
+  pgadmin:
+    image: dpage/pgadmin4:8.2
+    restart: always
+    ports:
+      - "8888:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgadmin@google.com
+      PGADMIN_DEFAULT_PASSWORD: pgpass
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+      # Mounts the server config to /pgadmin4/servers.json to automatically load the server
+      - "./nestjs-kafka-app-pg-server.json:/pgadmin4/servers.json:ro"
 volumes:
   database-data: # named volumes can be managed easier using docker-compose
+  pgadmin-data:

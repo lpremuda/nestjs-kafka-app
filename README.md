@@ -54,7 +54,7 @@ $ npm run start:prod
 ## Viewing the app
 
 ```
-localhost:3000
+open -a "Google Chrome" http://localhost:3000
 ```
 
 ---
@@ -117,6 +117,13 @@ npx prisma db seed
 View the database in Prisma's modern database IDE:
 ```bash
 npx prisma studio
+```
+
+## PgAdmin
+
+On your browser, go to `localhost:8888` and login, i.e.:
+```bash
+open -a "Google Chrome" http://localhost:8888
 ```
 
 ## [Setting up ConfigModule](https://docs.nestjs.com/techniques/configuration)
