@@ -109,8 +109,13 @@ Migrate the database and append the name "init" to the migration name:
 npx prisma migrate dev --name init
 ```
 
+Seed the database:
+```bash
+npx prisma db seed
+```
+
 View the database in Prisma's modern database IDE:
-```base
+```bash
 npx prisma studio
 ```
 
