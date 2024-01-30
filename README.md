@@ -33,6 +33,12 @@
 $ npm install
 ```
 
+## Starting Kind
+
+```bash
+kind create cluster --name nestjs-kafka-app --image kindest/node:v$(grep kubectl .tool-versions | cut -d' ' -f2)
+```
+
 ---
 ## Running the app
 
