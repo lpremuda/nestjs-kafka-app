@@ -8,9 +8,9 @@
   "scripts": {
     "build": "nest build",
     "db:psql": "PGPASSWORD=prisma_password psql -h localhost -U prisma_user -p 5432 nestjs-kafka-app",
-    "db:truncate": "PGPASSWORD=prisma_password psql -h localhost -U prisma_user -p 5432 -c 'TRUNCATE \"User\" CASCADE; ALTER SEQUENCE \"User_id_seq\" RESTART WITH 1; ALTER SEQUENCE \"Post_id_seq\" RESTART WITH 1' nestjs-kafka-app",
-    "db:user": "PGPASSWORD=prisma_password psql -h localhost -U prisma_user -p 5432 -c 'TABLE \"User\";' nestjs-kafka-app",
-    "db:post": "PGPASSWORD=prisma_password psql -h localhost -U prisma_user -p 5432 -c 'TABLE \"Post\";' nestjs-kafka-app",
+    "db:truncate": "PGPASSWORD=prisma_password psql -h localhost -U prisma_user -p 5432 -c 'TRUNCATE users CASCADE; ALTER SEQUENCE users_id_seq RESTART WITH 1; ALTER SEQUENCE posts_id_seq RESTART WITH 1' nestjs-kafka-app",
+    "db:users": "PGPASSWORD=prisma_password psql -h localhost -U prisma_user -p 5432 -c 'TABLE users;' nestjs-kafka-app",
+    "db:posts": "PGPASSWORD=prisma_password psql -h localhost -U prisma_user -p 5432 -c 'TABLE posts;' nestjs-kafka-app",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
